@@ -1,0 +1,544 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		502E47461E06D96C0027277B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 502E47451E06D96C0027277B /* main.m */; };
+		502E47491E06D96C0027277B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 502E47481E06D96C0027277B /* AppDelegate.m */; };
+		502E474C1E06D96C0027277B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 502E474B1E06D96C0027277B /* ViewController.m */; };
+		502E474F1E06D96C0027277B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 502E474D1E06D96C0027277B /* Main.storyboard */; };
+		502E47511E06D96C0027277B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 502E47501E06D96C0027277B /* Assets.xcassets */; };
+		502E47541E06D96C0027277B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 502E47521E06D96C0027277B /* LaunchScreen.storyboard */; };
+		502E475F1E06D96D0027277B /* TestiCarAsiaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 502E475E1E06D96D0027277B /* TestiCarAsiaTests.m */; };
+		502E476A1E06D96D0027277B /* TestiCarAsiaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 502E47691E06D96D0027277B /* TestiCarAsiaUITests.m */; };
+		502E47791E06F2EA0027277B /* MessageComposerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 502E47781E06F2EA0027277B /* MessageComposerView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		502E475B1E06D96D0027277B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 502E47391E06D96C0027277B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 502E47401E06D96C0027277B;
+			remoteInfo = TestiCarAsia;
+		};
+		502E47661E06D96D0027277B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 502E47391E06D96C0027277B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 502E47401E06D96C0027277B;
+			remoteInfo = TestiCarAsia;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		502E47411E06D96C0027277B /* TestiCarAsia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestiCarAsia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		502E47451E06D96C0027277B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		502E47471E06D96C0027277B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		502E47481E06D96C0027277B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		502E474A1E06D96C0027277B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		502E474B1E06D96C0027277B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		502E474E1E06D96C0027277B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		502E47501E06D96C0027277B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		502E47531E06D96C0027277B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		502E47551E06D96C0027277B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		502E475A1E06D96D0027277B /* TestiCarAsiaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestiCarAsiaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		502E475E1E06D96D0027277B /* TestiCarAsiaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestiCarAsiaTests.m; sourceTree = "<group>"; };
+		502E47601E06D96D0027277B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		502E47651E06D96D0027277B /* TestiCarAsiaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestiCarAsiaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		502E47691E06D96D0027277B /* TestiCarAsiaUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestiCarAsiaUITests.m; sourceTree = "<group>"; };
+		502E476B1E06D96D0027277B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		502E47771E06F2EA0027277B /* MessageComposerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageComposerView.h; sourceTree = "<group>"; };
+		502E47781E06F2EA0027277B /* MessageComposerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageComposerView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		502E473E1E06D96C0027277B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		502E47571E06D96D0027277B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		502E47621E06D96D0027277B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		502E47381E06D96C0027277B = {
+			isa = PBXGroup;
+			children = (
+				502E47431E06D96C0027277B /* TestiCarAsia */,
+				502E475D1E06D96D0027277B /* TestiCarAsiaTests */,
+				502E47681E06D96D0027277B /* TestiCarAsiaUITests */,
+				502E47421E06D96C0027277B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		502E47421E06D96C0027277B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				502E47411E06D96C0027277B /* TestiCarAsia.app */,
+				502E475A1E06D96D0027277B /* TestiCarAsiaTests.xctest */,
+				502E47651E06D96D0027277B /* TestiCarAsiaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		502E47431E06D96C0027277B /* TestiCarAsia */ = {
+			isa = PBXGroup;
+			children = (
+				502E47471E06D96C0027277B /* AppDelegate.h */,
+				502E47481E06D96C0027277B /* AppDelegate.m */,
+				502E474A1E06D96C0027277B /* ViewController.h */,
+				502E474B1E06D96C0027277B /* ViewController.m */,
+				502E474D1E06D96C0027277B /* Main.storyboard */,
+				502E47771E06F2EA0027277B /* MessageComposerView.h */,
+				502E47781E06F2EA0027277B /* MessageComposerView.m */,
+				502E47501E06D96C0027277B /* Assets.xcassets */,
+				502E47521E06D96C0027277B /* LaunchScreen.storyboard */,
+				502E47551E06D96C0027277B /* Info.plist */,
+				502E47441E06D96C0027277B /* Supporting Files */,
+			);
+			path = TestiCarAsia;
+			sourceTree = "<group>";
+		};
+		502E47441E06D96C0027277B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				502E47451E06D96C0027277B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		502E475D1E06D96D0027277B /* TestiCarAsiaTests */ = {
+			isa = PBXGroup;
+			children = (
+				502E475E1E06D96D0027277B /* TestiCarAsiaTests.m */,
+				502E47601E06D96D0027277B /* Info.plist */,
+			);
+			path = TestiCarAsiaTests;
+			sourceTree = "<group>";
+		};
+		502E47681E06D96D0027277B /* TestiCarAsiaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				502E47691E06D96D0027277B /* TestiCarAsiaUITests.m */,
+				502E476B1E06D96D0027277B /* Info.plist */,
+			);
+			path = TestiCarAsiaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		502E47401E06D96C0027277B /* TestiCarAsia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 502E476E1E06D96D0027277B /* Build configuration list for PBXNativeTarget "TestiCarAsia" */;
+			buildPhases = (
+				502E473D1E06D96C0027277B /* Sources */,
+				502E473E1E06D96C0027277B /* Frameworks */,
+				502E473F1E06D96C0027277B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestiCarAsia;
+			productName = TestiCarAsia;
+			productReference = 502E47411E06D96C0027277B /* TestiCarAsia.app */;
+			productType = "com.apple.product-type.application";
+		};
+		502E47591E06D96D0027277B /* TestiCarAsiaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 502E47711E06D96D0027277B /* Build configuration list for PBXNativeTarget "TestiCarAsiaTests" */;
+			buildPhases = (
+				502E47561E06D96D0027277B /* Sources */,
+				502E47571E06D96D0027277B /* Frameworks */,
+				502E47581E06D96D0027277B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				502E475C1E06D96D0027277B /* PBXTargetDependency */,
+			);
+			name = TestiCarAsiaTests;
+			productName = TestiCarAsiaTests;
+			productReference = 502E475A1E06D96D0027277B /* TestiCarAsiaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		502E47641E06D96D0027277B /* TestiCarAsiaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 502E47741E06D96D0027277B /* Build configuration list for PBXNativeTarget "TestiCarAsiaUITests" */;
+			buildPhases = (
+				502E47611E06D96D0027277B /* Sources */,
+				502E47621E06D96D0027277B /* Frameworks */,
+				502E47631E06D96D0027277B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				502E47671E06D96D0027277B /* PBXTargetDependency */,
+			);
+			name = TestiCarAsiaUITests;
+			productName = TestiCarAsiaUITests;
+			productReference = 502E47651E06D96D0027277B /* TestiCarAsiaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		502E47391E06D96C0027277B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = iCarAsia;
+				TargetAttributes = {
+					502E47401E06D96C0027277B = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Manual;
+					};
+					502E47591E06D96D0027277B = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 53FT5YRB87;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 502E47401E06D96C0027277B;
+					};
+					502E47641E06D96D0027277B = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 53FT5YRB87;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 502E47401E06D96C0027277B;
+					};
+				};
+			};
+			buildConfigurationList = 502E473C1E06D96C0027277B /* Build configuration list for PBXProject "TestiCarAsia" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 502E47381E06D96C0027277B;
+			productRefGroup = 502E47421E06D96C0027277B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				502E47401E06D96C0027277B /* TestiCarAsia */,
+				502E47591E06D96D0027277B /* TestiCarAsiaTests */,
+				502E47641E06D96D0027277B /* TestiCarAsiaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		502E473F1E06D96C0027277B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				502E47541E06D96C0027277B /* LaunchScreen.storyboard in Resources */,
+				502E47511E06D96C0027277B /* Assets.xcassets in Resources */,
+				502E474F1E06D96C0027277B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		502E47581E06D96D0027277B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		502E47631E06D96D0027277B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		502E473D1E06D96C0027277B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				502E47791E06F2EA0027277B /* MessageComposerView.m in Sources */,
+				502E474C1E06D96C0027277B /* ViewController.m in Sources */,
+				502E47491E06D96C0027277B /* AppDelegate.m in Sources */,
+				502E47461E06D96C0027277B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		502E47561E06D96D0027277B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				502E475F1E06D96D0027277B /* TestiCarAsiaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		502E47611E06D96D0027277B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				502E476A1E06D96D0027277B /* TestiCarAsiaUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		502E475C1E06D96D0027277B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 502E47401E06D96C0027277B /* TestiCarAsia */;
+			targetProxy = 502E475B1E06D96D0027277B /* PBXContainerItemProxy */;
+		};
+		502E47671E06D96D0027277B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 502E47401E06D96C0027277B /* TestiCarAsia */;
+			targetProxy = 502E47661E06D96D0027277B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		502E474D1E06D96C0027277B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				502E474E1E06D96C0027277B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		502E47521E06D96C0027277B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				502E47531E06D96C0027277B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		502E476C1E06D96D0027277B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		502E476D1E06D96D0027277B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		502E476F1E06D96D0027277B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = TestiCarAsia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iCarAsia.testicarasia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		502E47701E06D96D0027277B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = TestiCarAsia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iCarAsia.testicarasia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		502E47721E06D96D0027277B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 53FT5YRB87;
+				INFOPLIST_FILE = TestiCarAsiaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iCarAsia.TestiCarAsiaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestiCarAsia.app/TestiCarAsia";
+			};
+			name = Debug;
+		};
+		502E47731E06D96D0027277B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 53FT5YRB87;
+				INFOPLIST_FILE = TestiCarAsiaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iCarAsia.TestiCarAsiaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestiCarAsia.app/TestiCarAsia";
+			};
+			name = Release;
+		};
+		502E47751E06D96D0027277B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 53FT5YRB87;
+				INFOPLIST_FILE = TestiCarAsiaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iCarAsia.TestiCarAsiaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TestiCarAsia;
+			};
+			name = Debug;
+		};
+		502E47761E06D96D0027277B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 53FT5YRB87;
+				INFOPLIST_FILE = TestiCarAsiaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iCarAsia.TestiCarAsiaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TestiCarAsia;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		502E473C1E06D96C0027277B /* Build configuration list for PBXProject "TestiCarAsia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				502E476C1E06D96D0027277B /* Debug */,
+				502E476D1E06D96D0027277B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		502E476E1E06D96D0027277B /* Build configuration list for PBXNativeTarget "TestiCarAsia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				502E476F1E06D96D0027277B /* Debug */,
+				502E47701E06D96D0027277B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		502E47711E06D96D0027277B /* Build configuration list for PBXNativeTarget "TestiCarAsiaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				502E47721E06D96D0027277B /* Debug */,
+				502E47731E06D96D0027277B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		502E47741E06D96D0027277B /* Build configuration list for PBXNativeTarget "TestiCarAsiaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				502E47751E06D96D0027277B /* Debug */,
+				502E47761E06D96D0027277B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 502E47391E06D96C0027277B /* Project object */;
+}
