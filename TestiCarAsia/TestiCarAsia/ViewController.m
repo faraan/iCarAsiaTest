@@ -18,9 +18,6 @@ static NSString * const kLinks          = @"Links";
 static NSString * const kUrl            = @"url";
 static NSString * const kUrlTitle       = @"title";
 
-
-
-
 @implementation ViewController{
     NSMutableDictionary *jsonDictionary;
     NSMutableArray *urlArray;
@@ -34,13 +31,7 @@ static NSString * const kUrlTitle       = @"title";
     self.messageComposerView.delegate = self;
     [self.view addSubview:self.messageComposerView];
     
-    jsonDictionary = [NSMutableDictionary dictionary];
-    urlArray = [NSMutableArray array];
-
-   
-    
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -52,18 +43,30 @@ static NSString * const kUrlTitle       = @"title";
 
 -(void)messageComposerSendMessageClickedWithMessage:(NSString *)message{
     
-    NSString *blackListMessage =[self blackListString:message];
+    jsonDictionary = [NSMutableDictionary dictionary];
+    urlArray = [NSMutableArray array];
     
-    [jsonDictionary setObject:@[blackListMessage] forKey:kMessage];
-    if (urlArray.count>0) {
-        [jsonDictionary setObject:urlArray forKey:kLinks];
+    __weak typeof(self) weakSelf = self;
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         
-    }
-    
-    //NSLog(@"replaced String :-%@",str);
-    [_jsonMessageLabel sizeToFit];
-    _jsonMessageLabel.text = [self convertToJsonString:jsonDictionary];
-    
+        NSString *replacedString = [self blackListString:message];
+        
+        [jsonDictionary setObject:@[replacedString] forKey:kMessage];
+        
+        if (urlArray.count>0) {
+            [jsonDictionary setObject:urlArray forKey:kLinks];
+            
+        }
+        
+        NSString *blactListedString = [weakSelf convertToJsonString:jsonDictionary];
+        
+        dispatch_sync(dispatch_get_main_queue(), ^{
+            [_jsonMessageLabel sizeToFit];
+            
+            _jsonMessageLabel.text = blactListedString;
+        });
+    });
 }
 
 #pragma mark - Custom Methods
@@ -71,6 +74,7 @@ static NSString * const kUrlTitle       = @"title";
 // Method to black list number and url
 
 -(NSString *)blackListString:(NSString *)string{
+               //handler:(void (^) (NSString *replacedString))completion{
     
     __block  NSString *replacedString = string;
     
@@ -81,36 +85,34 @@ static NSString * const kUrlTitle       = @"title";
     NSDataDetector *detector = [NSDataDetector dataDetectorWithTypes:NSTextCheckingTypeLink
                                 | NSTextCheckingTypePhoneNumber error:&error];
     
-    [detector enumerateMatchesInString:string
-                               options:kNilOptions
-                                 range:NSMakeRange(0, [string length])
-                            usingBlock:
-     ^(NSTextCheckingResult *result, NSMatchingFlags flags, BOOL *stop) {
-         
-         if ([result resultType] == NSTextCheckingTypeLink) {
-             NSURL *url = [result URL];
-                          
-             if (![[url host] isEqualToString:kValidEmail]) {
-                 replacedString = [replacedString stringByReplacingOccurrencesOfString:[url absoluteString] withString:@"*****"];
-
-             }else{
-                 replacedString = [replacedString stringByReplacingOccurrencesOfString:[url absoluteString] withString:@""];
-                 NSLog(@"url Title - %@",[self getUrlTitle:[url absoluteURL]]);
-                 
-                 NSString *titleString = [weakSelf getUrlTitle:[url absoluteURL]];
-                 NSDictionary *urlDictionary = [NSDictionary dictionaryWithObjectsAndKeys:[url absoluteString],kUrl,titleString,kUrlTitle, nil];
-                 
-                 [urlArray addObject:urlDictionary];
-             }
-         }
-         if ([result resultType] == NSTextCheckingTypePhoneNumber) {
-             NSString *resultString  = [result phoneNumber];
-             
-             replacedString = [replacedString stringByReplacingOccurrencesOfString:resultString withString:@"*****"];
-         }
-
-     }];
+    NSArray *matches =[detector matchesInString:string options:0 range:NSMakeRange(0, [string length])];
     
+    for (NSTextCheckingResult *result in matches) {
+        
+        if ([result resultType] == NSTextCheckingTypeLink) {
+            NSURL *url = [result URL];
+            
+            if (![[url host] isEqualToString:kValidEmail]) {
+                replacedString = [replacedString stringByReplacingOccurrencesOfString:[url absoluteString] withString:@"*****"];
+                
+            }else{
+                replacedString = [replacedString stringByReplacingOccurrencesOfString:[url absoluteString] withString:@""];
+                NSLog(@"url Title - %@",[self getUrlTitle:[url absoluteURL]]);
+                
+                NSString *titleString = [weakSelf getUrlTitle:[url absoluteURL]];
+                NSDictionary *urlDictionary = [NSDictionary dictionaryWithObjectsAndKeys:[url absoluteString],kUrl,titleString,kUrlTitle, nil];
+                
+                [urlArray addObject:urlDictionary];
+            }
+        }
+        if ([result resultType] == NSTextCheckingTypePhoneNumber) {
+            NSString *resultString  = [result phoneNumber];
+            
+            replacedString = [replacedString stringByReplacingOccurrencesOfString:resultString withString:@"*****"];
+        }
+
+    }
+
     return replacedString;
 }
 
@@ -132,7 +134,6 @@ static NSString * const kUrlTitle       = @"title";
     return titleString;
 }
 
-
 // Method to JSON String.
 
 -(NSString*) convertToJsonString:(NSDictionary *)dictionary {
@@ -142,8 +143,5 @@ static NSString * const kUrlTitle       = @"title";
     NSString *jsonString = [[NSString alloc] initWithData:requestData encoding:NSUTF8StringEncoding];
     return jsonString;
 }
-                                                          
-
-                                            
 
 @end
